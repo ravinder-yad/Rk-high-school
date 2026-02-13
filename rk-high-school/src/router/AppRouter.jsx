@@ -14,6 +14,7 @@ import AdmissionProcess from '../pages/Admissions/AdmissionProcess';
 import EligibilityCriteria from '../pages/Admissions/EligibilityCriteria';
 import FeeStructure from '../pages/Admissions/FeeStructure';
 import OnlineAdmissionForm from '../pages/Admissions/OnlineAdmissionForm';
+import WhyChooseUs from '../pages/Admissions/WhyChooseUs';
 import Science from '../pages/Departments/Science';
 import Commerce from '../pages/Departments/Commerce';
 import Arts from '../pages/Departments/Arts';
@@ -41,8 +42,6 @@ const Placeholder = ({ title }) => (
 import ScrollToTop from '../components/ScrollToTop';
 import ScrollToHash from '../components/ScrollToHash';
 
-// ...
-
 const AppRouter = () => {
     return (
         <BrowserRouter>
@@ -66,6 +65,7 @@ const AppRouter = () => {
 
 
                     {/* Admissions */}
+                    <Route path="/admissions/why-us" element={<WhyChooseUs />} />
                     <Route path="/admissions/process" element={<AdmissionProcess />} />
                     <Route path="/admissions/criteria" element={<EligibilityCriteria />} />
                     <Route path="/admissions/fee-structure" element={<FeeStructure />} />
@@ -91,7 +91,6 @@ const AppRouter = () => {
                     <Route path="/gallery/photos" element={<PhotoGallery />} />
                     <Route path="/gallery/videos" element={<VideoGallery />} />
 
-                    {/* Notices */}
                     {/* Notices */}
                     <Route path="/notices/board" element={<NoticeBoard />} />
                     <Route path="/notices/circulars" element={<Circulars />} />

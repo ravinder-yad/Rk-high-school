@@ -4,12 +4,12 @@ import Navbar from './Navbar';
 
 const Layout = () => {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen font-sans antialiased text-slate-900 bg-slate-50">
             <Navbar />
             <main className="flex-grow">
                 <Outlet />
             </main>
-            {/* Footer will be added here later */}
+            {/* Footer handles manually per page for now */}
         </div>
     );
 };
